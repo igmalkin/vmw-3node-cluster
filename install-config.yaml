@@ -1,0 +1,47 @@
+apiVersion: v1
+baseDomain: ocp4.test
+compute:
+- architecture: amd64
+  hyperthreading: Enabled
+  name: worker
+  platform: {}
+  replicas: 0
+controlPlane:
+  architecture: amd64
+  hyperthreading: Enabled
+  name: master
+  replicas: 3
+  platform:
+    vsphere:
+      cpus: 4
+      coresPerSocket: 2
+      memoryMB: 16384
+      osDisk:
+        diskSizeGB: 120
+metadata:
+  creationTimestamp: null
+  name: vmw-cluster01
+networking:
+  clusterNetwork:
+  - cidr: 10.128.0.0/14
+    hostPrefix: 23
+  machineNetwork:
+  - cidr: 10.0.0.0/16
+  networkType: OpenShiftSDN
+  serviceNetwork:
+  - 172.30.0.0/16
+platform:
+  vsphere:
+    apiVIP: 10.17.49.5
+    cluster: Mont-Cluster
+    datacenter: Mont-DC
+    defaultDatastore: DC-HDD-iSCSI
+    folder: /Mont-DC/vm/OCP-Cluster-01
+    ingressVIP: 10.17.49.6
+    network: DvOCP-NET1
+    password: password
+    username: ocp-vmw
+    vCenter: vcenter.srv.mont.lab
+publish: External
+pullSecret:
+sshKey:
