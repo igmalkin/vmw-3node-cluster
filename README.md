@@ -5,6 +5,7 @@
 Используемые версии ПО:
 * VMware vSphere 6.7.0
 * Red Hat Openshift 4.7.13
+* Red Hat Enterprise Linux 8 (виртуальная машина, с которой производилась установка)
 
 Документация:
 https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere-installer-provisioned-customizations.html
@@ -42,4 +43,12 @@ $ ssh-keygen -t ed25519 -N '' -f ~/.ssh/id_rsa
 $ eval "$(ssh-agent -s)"
 $ ssh-add .ssh/id_rsa
 ```
+
+## Загрузка программы-инсталлятора
+
+Для загрузки инсталлятора платформы Openshift, потребуется доступ к порталу https://cloud.redhat.com/
+
+После входа на портал, переходим в меню **Openshift -> Clusters -> Create cluster**. Далее, необходимо выбрать платформу, на которую будет произведена установка. В нашем случае, это виртуализация от VMware: **Datacenter -> vSphere -> Installer-provisioned infrastructure**. 
+
+Следующим шагом, выбираем операционную систему, с которой будет происходить установка и скачиваем инсталлятор:
 
