@@ -51,4 +51,9 @@ $ ssh-add .ssh/id_rsa
 После входа на портал, переходим в меню **Openshift -> Clusters -> Create cluster**. Далее, необходимо выбрать платформу, на которую будет произведена установка. В нашем случае, это виртуализация от VMware: **Datacenter -> vSphere -> Installer-provisioned infrastructure**. 
 
 Следующим шагом, выбираем операционную систему, с которой будет происходить установка и скачиваем инсталлятор:
+![](images/get-installer.JPG)
 
+Распаковываем полученный архив:
+```
+$ tar xvf openshift-install-linux.tar.gz
+```
