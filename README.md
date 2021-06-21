@@ -82,4 +82,4 @@ $ sudo update-ca-trust extract
 
 ![](images/vmw-roles.jpg)
 
-Более детальный список ролей с необходимыми привелегиями можно посмотреть по ссылке.
+Более детальный список ролей с необходимыми привелегиями доступен по [ссылке](https://github.com/nirvkot/vmw-3node-cluster/blob/main/vmw-roles-list.md)
