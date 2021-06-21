@@ -99,3 +99,26 @@
 **Network**
 > Assign network
 
+## ocp_vSphere_vCenter
+
+**Cns**
+> Searchable
+
+**vSphere Tagging**
+
+> Assign or Unassign vSphere Tag
+> Create vSphere Tag
+> Create vSphere Tag Category
+> Delete vSphere Tag
+> Delete vSphere Tag Category
+> Edit vSphere Tag
+> Edit vSphere Tag Category
+
+**Sessions**
+> Validate session
+
+**Profile-driven storage**
+> Profile-driven storage view
+
+**Storage views**
+> View
