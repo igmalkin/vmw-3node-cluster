@@ -87,3 +87,15 @@
 
 >> Clone virtual machine
 
+## ocp_vSphere_Datastore
+
+**Datastore**
+> Allocate space
+> Browse datastore
+> Low level file operations
+
+## ocp_vSphere_Port_Group
+
+**Network**
+> Assign network
+
