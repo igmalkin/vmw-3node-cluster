@@ -1,4 +1,8 @@
-# Список ролей и привилегий для установки кластера OpenShift на платформу VMware
+# Набор ролей для привилегированного пользователя
+
+В документе указан детальный список ролей и привилегий, необходимых пользователю для установки кластера OpenShift на платформу виртуализации VMware.
+
+Создать необходимые роли можно через меню **vCenter Home -> Administration -> Access Control -> Roles**, либо с помощью утилиты [govc](https://github.com/vmware/govmomi/blob/master/govc/USAGE.md) через CLI.
 
 ## ocp_vCenter_Cluster
 
