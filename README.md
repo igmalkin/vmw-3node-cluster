@@ -170,11 +170,20 @@ $ ./openshift-install create cluster --dir=/home/ocp-vmw/ocp-deploy --log-level=
 Установка, в среднем, занимает от 30 минут, в зависимости от вашей инфраструктуры. Когда процесс развертывания кластера завершен, установщик выведет в консоль сообщение вида:
 
 ```
+INFO Waiting up to 10m0s for the openshift-console route to be created...
+DEBUG Route found in openshift-console namespace: console
+DEBUG OpenShift console route is admitted
 INFO Install complete!
-INFO To access the cluster as the system:admin user when using 'oc', run 'export KUBECONFIG=/home/myuser/install_dir/auth/kubeconfig'
-INFO Access the OpenShift web-console here: https://console-openshift-console.apps.mycluster.example.com
-INFO Login to the console with user: "kubeadmin", and password: "4vYBz-Ee6gm-ymBZj-Wt5AL"
-INFO Time elapsed: 36m22s
+INFO To access the cluster as the system:admin user when using 'oc', run 'export KUBECONFIG=/home/ocp-vmw/ocp-deploy/auth/kubeconfig'
+INFO Access the OpenShift web-console here: https://console-openshift-console.apps.vmw-cluster01.ocp4.test
+INFO Login to the console with user: "kubeadmin", and password: "password"
+DEBUG Time elapsed per stage:
+DEBUG     Infrastructure: 3m20s
+DEBUG Bootstrap Complete: 29m24s
+DEBUG                API: 4m56s
+DEBUG  Bootstrap Destroy: 23s
+DEBUG  Cluster Operators: 22m46s
+INFO Time elapsed: 56m3s
 ```
 
 Здесь будет указана ссылка для доступа к web-консоли, а так же необходимые данные для входа.
