@@ -124,3 +124,34 @@ $ ./openshift-install create install-config --dir=ocp-deploy
 В результате выполнения команды, будет сгенерирован конфигурационный файл **_install-config.yaml_**, содержащий всю информацию, введенную ранее. Рекомендуется сохранить его в другую директорию для удобства использования в дальнейшем, т.к. после запуска установщика этот файл будет удален. Все параметры файла можно кастомизировать при помощи соответствующего раздела [документации](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere-installer-provisioned-customizations.html#installation-configuration-parameters_installing-vsphere-installer-provisioned-customizations). 
 
 Конфигурационный файл, используемый в текущей инсталляции, можно посмотреть по [ссылке](install-config.yaml).
+
+Секции, на которые стоит обратить внимание:
+
+* В нашем случае, кластер будет состоять из трех нод, совмещающих роли worker и master. Поэтому, кол-во реплик worker-узлов установлено в 0:
+```
+compute:
+- architecture: amd64
+  hyperthreading: Enabled
+  name: worker
+  platform: {}
+  replicas: 0
+```
+
+* По желанию, можно ограничить вычислительные ресурсы виртуальных машин кластера:
+
+```
+platform:
+    vsphere:
+      cpus: 4
+      coresPerSocket: 2
+      memoryMB: 16384
+      osDisk:
+        diskSizeGB: 120
+```
+
+* Как было разобрано выше, в нашем случае установка производилась в заранее подготовленную папка с правами доступа для пользователя **ocp-vmw**. В файле конфигурации это описано следующим образом (_<datacenter_name>/vm/<folder_name>_):
+
+```
+  folder: /Mont-DC/vm/OCP-Cluster-01
+```
+
