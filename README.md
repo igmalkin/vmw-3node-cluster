@@ -86,3 +86,8 @@ $ sudo update-ca-trust extract
 
 После того, как пользователь и требуемые роли созданы, необходимо настроить права доступа на соответствующие объекты согласно табличке из [мануала](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere-installer-provisioned-customizations.html#installation-vsphere-installer-infra-requirements_installing-vsphere-installer-provisioned-customizations):
 
+![](images/recpermissions.JPG)
+
+Например, для добавления пользователя и роли к vSphere vCenter, переходим к объекту во вкладку Permissions:
+
+![](images/addpermissions.jpg)
