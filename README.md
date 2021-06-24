@@ -16,6 +16,21 @@ https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/
 
 DHCP-сервер настроен на выдачу адресов в диапазоне 10.17.49.65-10.17.49.127
 
+```
+subnet 10.17.49.0 netmask 255.255.255.0 {
+
+    pool {
+      range 10.17.49.65 10.17.49.240;
+      failover peer "failover-mont";
+    }
+    option routers 10.17.49.254;
+    option broadcast-address 10.17.49.255;
+    option subnet-mask 255.255.255.0;
+    option ntp-servers 10.17.42.130, 10.17.42.134;
+    option time-servers 10.17.42.130, 10.17.42.134;
+    
+```
+
 Статические адреса, необходимые для функционирования платформы:
 
 1. 10.17.49.5 - API VIP
