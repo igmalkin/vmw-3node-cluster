@@ -88,6 +88,10 @@ $ sudo update-ca-trust extract
 
 ![](images/recpermissions.JPG)
 
-Например, для добавления пользователя и роли к vSphere vCenter, переходим к объекту во вкладку Permissions:
+Например, для добавления пользователя и роли к vSphere vCenter, переходим к объекту во вкладку **Permissions**:
 
 ![](images/addpermissions.jpg)
+
+Ищем нашего пользователя, в нашем случае это **ocp-vmw** домене MONT.LAB, и выбираем соответствующую роль. Для объекта vSphere vCenter это **ocp_vCenter_Cluster**, созданная нами на предыдущих шагах.
+
+![](images/adduser.jpg)
