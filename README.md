@@ -47,7 +47,7 @@ subnet 10.17.49.0 netmask 255.255.255.0 {
 1. `api.vmw-cluster01.ocp4.test`
 2. `*.apps.vmw-cluster01.ocp4.test` (wildcard)
 
--где _vmw-cluster01_ имя кластера, а _ocp4.test_ используемый домен.
+-где `vmw-cluster01` имя кластера, а `ocp4.test` используемый домен.
 На примере рассматриваемой инсталляции, в качестве DNS-сервера используется Red Hat Identity Management:
 ![](images/dns-records.JPG)
 
