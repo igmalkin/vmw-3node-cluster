@@ -43,5 +43,5 @@ platform:
     username: ocp-vmw
     vCenter: vcenter.srv.mont.lab
 publish: External
-pullSecret:
-sshKey:
+pullSecret: paste your pull-secret
+sshKey: paste your ssh-key
