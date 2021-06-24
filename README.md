@@ -75,7 +75,7 @@ $ sudo update-ca-trust extract
 
 ![](images/addpermissions.jpg)
 
-Ищем нашего пользователя, в нашем случае это **ocp-vmw** домене MONT.LAB, и выбираем соответствующую роль. Для объекта vSphere vCenter это **ocp_vCenter_Cluster**, созданная нами на предыдущих шагах.
+Ищем нужного пользователя, в нашем случае это **ocp-vmw** в домене MONT.LAB, и выбираем соответствующую роль. Для объекта vSphere vCenter это **ocp_vCenter_Cluster**, созданная нами на предыдущих шагах.
 
 ![](images/adduser.JPG)
 
@@ -155,3 +155,10 @@ platform:
   folder: /Mont-DC/vm/OCP-Cluster-01
 ```
 
+## Установка кластера
+
+После генерации конфигурационного файла, можно приступать к установке кластера. Конфигурационный файл необходимо скопировать в пустую директорию (в нашем случае это _ocp-deploy_) и запустить установщик:
+
+```
+$ ./openshift-install create cluster --dir=/home/ocp-vmw/ocp-deploy --log-level=debug
+```
