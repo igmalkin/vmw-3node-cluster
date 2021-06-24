@@ -67,7 +67,7 @@ $ sudo update-ca-trust extract
 
 ![](images/vmw-roles.jpg)
 
-Более детальный список ролей с необходимыми привелегиями доступен по [ссылке](https://github.com/nirvkot/vmw-3node-cluster/blob/main/vmw-roles-list.md)
+Более детальный список ролей с необходимыми привелегиями доступен по [ссылке](https://github.com/nirvkot/vmw-3node-cluster/blob/main/vmw-roles-list.md).
 
 После того, как пользователь и требуемые роли созданы, необходимо настроить права доступа на соответствующие объекты согласно табличке из [мануала](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere-installer-provisioned-customizations.html#installation-vsphere-installer-infra-requirements_installing-vsphere-installer-provisioned-customizations):
 
