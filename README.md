@@ -104,7 +104,7 @@ $ tar xvf openshift-install-linux.tar.gz
 
 ## Создание файла конфигурации
 
-Под установку кластера рекомендуется создать пустую директорию, в которой программа-инсталлятор будет складывать различные служебные файлы. 
+Под установку кластера рекомендуется создать пустую директорию, в которую программа-инсталлятор будет складывать различные служебные файлы. 
 
 Процедура создания и редактирования конфигурационного файла детально описана в [документации](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere-installer-provisioned-customizations.html#installation-initializing_installing-vsphere-installer-provisioned-customizations). 
 
@@ -118,3 +118,9 @@ $ ./openshift-install create install-config --dir=ocp-deploy
 Инсталлятор в интерактивном режиме потребует ввести вводные данные для установки кластера (например, адрес vCenter'a, имя-пароль от учетной записи, зарезервированные IP-адреса, и.т.п.)
 
 ![](images/installer.JPG)
+
+Важно отметить, что в случае корректной настройки ролей и привилегий пользователя, значения объектов (_datacenter, cluster, datastore, network_) будут подставлены автоматически в соответствии с правами доступа. 
+
+В результате выполнения команды, будет сгенерирован конфигурационный файл **_install-config.yaml_**, содержащий всю информацию, введенную ранее. Рекомендуется сохранить его в другую директорию для удобства использования в дальнейшем, т.к. после запуска установщика этот файл будет удален. Все параметры файла можно кастомизировать при помощи соответствующего раздела [документации](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere-installer-provisioned-customizations.html#installation-configuration-parameters_installing-vsphere-installer-provisioned-customizations). 
+
+Конфигурационный файл, используемый в текущей инсталляции, можно посмотреть по ссылке.
