@@ -123,4 +123,4 @@ $ ./openshift-install create install-config --dir=ocp-deploy
 
 В результате выполнения команды, будет сгенерирован конфигурационный файл **_install-config.yaml_**, содержащий всю информацию, введенную ранее. Рекомендуется сохранить его в другую директорию для удобства использования в дальнейшем, т.к. после запуска установщика этот файл будет удален. Все параметры файла можно кастомизировать при помощи соответствующего раздела [документации](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere-installer-provisioned-customizations.html#installation-configuration-parameters_installing-vsphere-installer-provisioned-customizations). 
 
-Конфигурационный файл, используемый в текущей инсталляции, можно посмотреть по ссылке.
+Конфигурационный файл, используемый в текущей инсталляции, можно посмотреть по [ссылке](install-config.yaml).
