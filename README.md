@@ -162,3 +162,21 @@ platform:
 ```
 $ ./openshift-install create cluster --dir=/home/ocp-vmw/ocp-deploy --log-level=debug
 ```
+
+Если вы хотите видеть меньше информации на экране в процессе установки, используйте параметр _--log-level=info_.
+
+Установка, в среднем, занимает от 30 минут, в зависимости от вашей инфраструктуры. Когда процесс развертывания кластера завершен, установщик выведет в консоль сообщение вида:
+
+```
+INFO Install complete!
+INFO To access the cluster as the system:admin user when using 'oc', run 'export KUBECONFIG=/home/myuser/install_dir/auth/kubeconfig'
+INFO Access the OpenShift web-console here: https://console-openshift-console.apps.mycluster.example.com
+INFO Login to the console with user: "kubeadmin", and password: "4vYBz-Ee6gm-ymBZj-Wt5AL"
+INFO Time elapsed: 36m22s
+```
+
+Здесь будет указана ссылка для доступа к web-консоли, а так же необходимые данные для входа.
+
+В разрезе платформы виртуализации развернутый кластер выглядит следующим образом:
+
+![](images/installed-cluster.JPG)
