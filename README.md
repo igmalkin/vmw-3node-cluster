@@ -36,7 +36,7 @@ subnet 10.17.49.0 netmask 255.255.255.0 {
 1. `10.17.49.5` - API VIP
 2. `10.17.49.6` - Ingress (apps) VIP
 
-**_Важно: текущий вариант установки предполагает наличие в используемом VLAN'е постоянного доступа в интернет. Установка в закрытом контуре (где доступ в интернет организовать нет возможности) рассмотрена в соответствующем разделе [документации](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-restricted-networks-installer-provisioned-vsphere.html)_.**
+**Важно: текущий вариант установки предполагает наличие в используемом VLAN'е постоянного доступа в интернет. Установка в закрытом контуре (где доступ в интернет организовать нет возможности) рассмотрена в соответствующем разделе [документации](https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-restricted-networks-installer-provisioned-vsphere.html).**
 
 ## Настройка DNS-сервера
 
