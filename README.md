@@ -92,7 +92,7 @@ $ sudo update-ca-trust extract
 
 ![](images/addpermissions.jpg)
 
-Ищем нужного пользователя, в нашем случае это **ocp-vmw** в домене MONT.LAB, и выбираем соответствующую роль. Для объекта vSphere vCenter это `ocp_vCenter_Cluster`, созданная нами на предыдущих шагах.
+Ищем нужного пользователя, в нашем случае это **ocp-vmw** в домене MONT.LAB, и выбираем соответствующую роль. Для объекта vSphere vCenter это `ocp_vSphere_vCenter`, созданная нами на предыдущих шагах.
 
 ![](images/adduser.JPG)
 
